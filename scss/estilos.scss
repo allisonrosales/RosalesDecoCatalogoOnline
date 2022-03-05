@@ -1,0 +1,114 @@
+/* ============ VARIABLES ============ */
+
+$tipografiacursiva: 'Dancing Script', cursive;
+$tipografiaserif: 'Urbanist', sans-serif;
+
+$colorcamel: #bb6846;
+$colorrosa: #f3d0b3;
+$colorblanco: #ffffff;
+$colornegro: #0a0a0a;
+$sombra: #d4c4c4;
+
+$degradadoheader: rgba(255,255,255,0.7287289915966386) 29%, rgba(255,255,255,0.6951155462184874) 100%;
+$degradadoheadererror404: rgba(255,255,255,0.6334908963585435) 0%, rgba(255,255,255,0.87718837535014) 32%;
+
+/* ============ MIXING ============ */
+
+@mixin alineacionContenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gridPosicion {
+  display: grid;
+  justify-content: center;
+}
+
+@mixin background {
+  height: auto;
+  padding-bottom: 12rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  &::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $colorcamel;
+    border: 4px solid $colorblanco;
+  }
+
+  &:not(i){
+    font-family: $tipografiaserif;
+  }
+
+}
+
+.desplazamiento__scroll--margintop {
+  scroll-margin-top: 35px;
+}
+
+/* ============ GENERAL ============ */
+
+.parrafosTitulosWeb {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 17px;
+}
+
+.texto__h1a--textaling,
+.text__h1p--aling {
+  text-align: center;
+}
+
+.titulos__h1--fontfamily {
+  font-family: $tipografiacursiva;
+}
+
+.titulos__h1--color {
+  color: $colorcamel;
+}
+
+.titulo__h1--grosor {
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.titulosSeccionesProductos {
+  margin-top: 9rem;
+}
+
+.textosweb--margin {
+  margin: 5rem 2rem 0;
+}
+
+/* ============ BANNER | PRODUCTOS ============ */
+
+.flechaBanner {
+  margin-top: 20px;
+}
+
+.linkFlechaBanner {
+  i {
+    font-size: 60px;
+    color: $colorcamel;
+  }
+}
+
+/* ============ IMPORT ============ */
+
+@import "./error404", "./headerproductos", "./preguntasfrecuentes", "./footer", "./envios", "./bannerinicio", "./categoriasinicio", "./tarjetasproductos";

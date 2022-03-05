@@ -1,0 +1,154 @@
+.texto__h1h2a--aling {
+    text-align: center;
+}
+
+.contenedor-texto-banner {
+    margin-top: 8.5rem;
+}
+
+.titulo-principal-inicio {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.subtitulo-principal-inicio {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.contenedorBotonBanner {
+    margin-top: 3.5rem;
+}
+
+.botonPrincipal {
+    text-decoration: none;
+    color: $colorblanco;
+    background-color: $colorcamel;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 3px solid $colorcamel;
+
+    &:hover {
+        border: 3px solid $colorcamel;
+        color: $colorcamel;
+        background-color: transparent;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+/* ======================= RESPONSIVE ======================= */
+
+/* ======================== 510px ======================== */
+
+@media only screen and (max-width: 510px) {
+
+    .titulo-principal-inicio {
+        font-size: 28px;
+    }
+
+    .subtitulo-principal-inicio {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+
+    .contenedor-texto-banner {
+        margin-top: 8rem;
+        margin-inline: 15px;
+        padding-bottom: 5rem;
+    }
+
+    .botonPrincipal {
+        padding: 8px 18px;
+        font-size: 16px;
+    }
+
+    .contenedorHeaderBanner {
+        padding-bottom: 5rem;
+    }
+}
+
+/* ======================== 630px || 511px ======================== */
+
+
+@media only screen and (max-width: 630px) and (min-width: 511px) {
+
+    .titulo-principal-inicio {
+        font-size: 32px;
+    }
+
+    .subtitulo-principal-inicio {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+
+    .botonPrincipal {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+
+    .contenedor-texto-banner {
+        margin-top: 10rem;
+        margin-inline: 15px;
+        padding-bottom: 5rem;
+    }
+
+    .contenedorHeaderBanner {
+        padding-bottom: 5rem;
+    }
+
+}
+
+/* ======================== 830px || 650px ======================== */
+
+@media only screen and (max-width: 830px) and (min-width: 631px) {
+
+    .titulo-principal-inicio {
+        font-size: 35px;
+    }
+
+    .subtitulo-principal-inicio {
+        font-size: 27px;
+    }
+
+    .contenedor-texto-banner {
+        margin-top: 10rem;
+        margin-inline: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    .botonPrincipal {
+        padding: 10px 17px;
+        font-size: 17px;
+    }
+
+    .contenedorHeaderBanner {
+        padding-bottom: 5rem;
+    }
+
+}
+
+
+/* ======================== 990px || 831px ======================== */
+
+@media only screen and (max-width: 990px) and (min-width: 831px) {
+
+    .titulo-principal-inicio {
+        font-size: 40px;
+    }
+
+    .subtitulo-principal-inicio {
+        font-size: 30px;
+    }
+
+    .contenedor-texto-banner {
+        margin-top: 9rem;
+        margin-inline: 2rem;
+        padding-bottom: 5rem;
+    }
+
+
+}

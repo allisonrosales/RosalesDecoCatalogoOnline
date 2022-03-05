@@ -1,0 +1,188 @@
+.headerproductos--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoNuestrosProductos.png");
+}
+
+.headerPortacosmeticos--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoPortacosmeticos.png");
+}
+
+.headerCartuchera--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoCartuchera.png");
+}
+
+.headerTapabocas--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoTapabocas.png");
+}
+
+.headerbox--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoBox.png");
+}
+
+.headerAlmohadones--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoAlmohadones.png");
+}
+
+.headerMantas--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoManta.png");
+}
+
+.headerinicio--bg {
+  background-image: linear-gradient(to top, $degradadoheader), url("/images/generales/fotoInicio.png");
+}
+
+.header__img--tamaño {
+  @include background;
+}
+
+/* ======================== 510px ======================== */
+
+@media only screen and (max-width: 510px) {
+
+  /* ============ GENERAL ============ */
+
+  .titulosSeccionesProductos {
+    font-size: 47px;
+    margin-top: 8rem;
+    margin-inline: 20px;
+  }
+
+  .linkFlechaBanner {
+    i {
+      font-size: 50px;
+    }
+  }
+
+  .titulosSeccionWeb {
+    font-size: 50px;
+  }
+
+  .flechaBanner {
+    margin-top: 14px;
+  }
+
+  .parrafosTitulosWeb {
+    font-size: 15px;
+    margin: 30px 0 25px 0;
+  }
+
+  .textosweb--margin {
+    margin-top: 5rem;
+  }
+
+  .header__img--tamaño {
+    padding-bottom: 8rem;
+    height: auto;
+  }
+}
+
+/* ======================== 630px || 540px ======================== */
+
+@media only screen and (max-width: 630px) and (min-width: 511px) {
+
+  /* ============ GENERAL ============ */
+
+  .titulosSeccionesProductos {
+    font-size: 60px;
+    margin-top: 10rem;
+  }
+
+  .header__img--tamaño {
+    padding-bottom: 10rem;
+    height: auto;
+  }
+
+  .titulosSeccionWeb {
+    font-size: 60px;
+  }
+
+  .textosweb--margin {
+    margin-top: 4rem;
+    margin-inline: 45px;
+  }
+
+  .flechaBanner {
+    margin-top: 14px;
+  }
+
+  .parrafosTitulosWeb {
+    font-size: 15px;
+    margin: 30px 0 25px 0;
+  }
+
+  .linkFlechaBanner {
+    i {
+      font-size: 50px;
+    }
+  }
+}
+
+/* ======================== 830px || 650px ======================== */
+
+@media only screen and (max-width: 830px) and (min-width: 631px) {
+
+  /* ============ GENERAL ============ */
+
+  .titulosSeccionesProductos {
+    font-size: 60px;
+    margin-top: 8rem;
+  }
+
+  .header__img--tamaño {
+    padding-bottom: 10rem;
+    height: auto;
+  }
+
+  .titulosSeccionWeb {
+    font-size: 65px;
+    font-weight: 700;
+  }
+
+  .textosweb--margin {
+    margin-top: 5rem;
+    margin-inline: 40px;
+  }
+
+  .linkFlechaBanner {
+    i {
+      font-size: 55px;
+    }
+  }
+
+  .flechaBanner {
+    margin-top: 14px;
+  }
+
+  .parrafosTitulosWeb {
+    font-size: 15px;
+    margin: 30px 0 25px 0;
+  }
+}
+
+/* ======================== 990px || 831px ======================== */
+
+@media only screen and (max-width: 990px) and (min-width: 831px) {
+
+  .header__img--tamaño {
+    padding-bottom: 10rem;
+    height: auto;
+  }
+
+  .titulosSeccionesProductos {
+    font-size: 65px;
+    margin-top: 9rem;
+  }
+
+  .contenedorHeaderBanner {
+    padding-bottom: 6rem;
+  }
+
+  .textosweb--margin {
+    margin-top: 5rem;
+    margin-inline: 4rem;
+  }
+
+  .titulosSeccionWeb {
+    font-size: 65px;
+  }
+
+}

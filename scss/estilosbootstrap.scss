@@ -1,0 +1,467 @@
+/* ============ VARIABLES ============ */
+
+$colorcamel: #bb6846;
+$colorrosa: #f3d0b3;
+$colorblanco: #ffffff;
+$colornegro: #0a0a0a;
+$sombra: #d4c4c4;
+
+$primary: $colorcamel;
+
+$navbar-light-color: $colornegro;
+$navbar-light-hover-color: $colornegro;
+$navbar-nav-link-padding-x: 15px !default;
+$navbar-light-toggler-border-color: transparent;
+
+$dropdown-link-color: $colornegro;
+$dropdown-link-hover-color: $colorblanco;
+$dropdown-link-hover-bg: $colorcamel;
+$dropdown-bg: $colorrosa;
+$dropdown-padding-x: 0 !default;
+$dropdown-padding-y: 0 !default;
+$dropdown-item-padding-y: 12px !default;
+$dropdown-border-color: $colorrosa;
+
+$border-radius: 6px;
+$dropdown-border-radius: $border-radius !default;
+
+$form-label-margin-bottom: 0;
+$form-text-color: $colorcamel;
+
+$input-bg: $colorrosa;
+$input-border-color: $colorcamel;
+$input-border-width: 2px;
+$input-placeholder-color: $colorcamel;
+$input-focus-box-shadow: none;
+$input-focus-border-color: none;
+
+$table-border-width: 2px;
+$table-border-color: $colorcamel;
+$table-group-separator-color: $colorcamel;
+$table-cell-padding-y: 12px;
+$table-cell-padding-x: 10px;
+
+/* ============ MIXING ============ */
+
+@mixin alineacionContenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ============ MENÚ ============ */
+
+.navbar-brand {
+    img {
+        width: 100px;
+    }
+}
+
+.nav-link {
+    letter-spacing: 1px;
+    margin-inline: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $colorrosa;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.container {
+    padding-top: 25px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.dropdown-menu {
+    margin: 2px 20px !important;
+    letter-spacing: 1px;    
+    .dropdown-item {
+        font-weight: 600 !important;
+        width: auto !important;
+        margin: 5px;
+    
+        &:hover,
+        &:focus {
+            font-weight: 700;
+        }
+    }
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* ============ BOTÓN ============ */
+
+.btn {
+    border-radius: $border-radius;
+    letter-spacing: 1px;
+    border-color: $colorcamel !important;
+    background-color: $colorcamel !important;
+    color: $colorblanco !important;
+}
+
+/* ============ CONTACTO ============ */
+
+.seccion-formulario-contacto {
+    @include alineacionContenido;
+    margin: 50px 25px 40px;
+}
+
+form {
+    background-color: $colorrosa;
+    padding: 35px;
+    border-radius: $border-radius;
+    width: 450px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+input:not(.botonContacto) {
+    height: 34px;
+    width: 100%;
+}
+
+.seccionRedesSocialesContacto {
+    @include alineacionContenido;
+    text-align: center;
+    color: $colorcamel;
+    font-size: 18px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    margin: 50px 15px;
+}
+
+.textoUbicacion {
+    margin-inline: 5px;
+    padding: 10px;
+    margin-bottom: 0 !important;
+}
+
+.seccionRedesSocialesContacto {
+    a {
+        text-decoration: none;
+        color: $colorcamel;
+        margin: 0 10px;
+        padding: 10px;
+
+        &:hover {
+            color: $colorcamel;
+        }
+    }
+}
+
+.seccionRedesSocialesContacto,
+.textoUbicacion {
+
+    .far,
+    .fab,
+    .fas {
+        padding: 0 8px;
+    }
+}
+
+/* ============ ENVÍOS  A DOMICILIO ============ */
+
+tbody,
+th {
+    vertical-align: revert !important;
+    text-align: center !important;
+}
+
+.table-responsive {
+    margin: 80px;
+}
+
+thead {
+    background-color: $colorcamel;
+    color: $colorblanco;
+}
+
+ol,
+ul,
+dl {
+    margin: 0 !important;
+}
+
+td {
+    ul {
+        padding: 0 !important;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    ol {
+        padding: 0 !important;
+        list-style: none;
+    }
+}
+
+/* ============ ICONOS CON INFO ============ */
+
+.iconos-con-info {
+    background-color: $colorrosa;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.iconosinfo__img--size {
+    width: 165px;
+}
+
+.carousel {
+    display: none;
+    background-color: $colorrosa;
+}
+
+/* ======================== RESPONSIVE ======================== */
+
+/* ======================== 510px ======================== */
+
+@media only screen and (max-width: 510px) {
+
+    /* ============ BARRA DE NAVEGACIÓN ============ */
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 30px;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+    }
+
+    .navbar-brand {
+        img {
+            width: 85px;
+        }
+    }
+
+    .nav-link {
+        margin-top: 5px;
+        font-size: 15px !important;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+
+    .dropdown-menu {
+        margin: 10px 15px !important;
+        font-size: 15px !important;
+
+        .dropdown-item {
+
+            &:hover,
+            &:focus {
+                background-color: transparent !important;
+                color: $colornegro !important;
+            }
+        }
+    }
+
+    /* ============ CONTACTO ============ */
+
+    .seccionRedesSocialesContacto {
+        font-size: 15px;
+        margin: 50px auto;
+    }
+
+    /* ============ ENVÍOS A DOMICILIO ============ */
+
+    table {
+        font-size: 14px;
+    }
+
+    .table-responsive {
+        margin: 40px 10px;
+    }
+
+    /* ============ INICIO | ICONOS CON INFO ============ */
+
+    .iconos-con-info {
+        display: none;
+    }
+
+    .carousel {
+        display: block;
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 160px;
+        }
+    }
+
+    .carousel-inner {
+        height: 250px;
+        padding: 50px;
+    }
+
+}
+
+/* ======================== 630px || 511px ======================== */
+
+
+@media only screen and (max-width: 630px) and (min-width: 511px) {
+
+
+    /* ============ BARRA DE NAVEGACIÓN ============ */
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 30px;
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+    }
+
+    .navbar-brand {
+        img {
+            width: 85px;
+        }
+    }
+
+    .nav-link {
+        margin-top: 5px;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+
+    .dropdown-item {
+
+        &:hover,
+        &:focus {
+            background-color: transparent !important;
+            color: $colornegro !important;
+        }
+    }
+
+    /* ============ CONTACTO ============ */
+
+    .seccionRedesSocialesContacto {
+        font-size: 17px;
+    }
+
+    /* ============ INICIO | ICONOS CON INFO ============ */
+
+    .iconos-con-info {
+        display: none;
+    }
+
+    .carousel {
+        display: block;
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+            height: 160px;
+        }
+    }
+
+    .carousel-inner {
+        height: 250px;
+        padding: 50px;
+    }
+
+}
+
+/* ======================== 830px || 631px ======================== */
+
+@media only screen and (max-width: 830px) and (min-width: 631px) {
+
+    /* ============ INICIO | ICONOS CON INFO ============ */
+
+    .iconosinfo__img--size {
+        width: 150px;
+    }
+
+    /* ============ BARRA DE NAVEGACIÓN ============ */
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 30px;
+    }
+
+    .navbar-brand {
+        img {
+            width: 85px;
+        }
+    }
+
+    .navbar-brand {
+        margin-left: 15px;
+    }
+
+    .nav-link {
+        margin-top: 5px;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+
+    .dropdown-item {
+
+        &:hover,
+        &:focus {
+            background-color: transparent !important;
+            color: $colornegro !important;
+        }
+    }
+}
+
+/* ======================== 990px || 831px ======================== */
+
+@media only screen and (max-width: 990px) and (min-width: 831px) {
+
+    /* ============ BARRA DE NAVEGACIÓN ============ */
+
+    .navbar-nav .nav-link {
+        padding-left: 20px !important;
+    }
+
+    .navbar-brand {
+        margin-left: 20px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-top: 30px;
+        margin-inline: 10px;
+    }
+
+    .nav-link {
+        margin-inline: -5px;
+        padding: 10px 0 !important;
+        margin-top: 5px;
+    }
+
+    .dropdown-menu {
+        margin: 3px -5px !important;
+    }
+
+    /* ============ INICIO | ICONOS CON INFO ============ */
+
+    .iconosinfo__img--size {
+        width: 150px;
+    }
+}
+
+
+/* ============ IMPORT ============ */
+
+@import "../../RosalesDeco - Catalogo Online/node_modules/bootstrap/scss/bootstrap.scss";

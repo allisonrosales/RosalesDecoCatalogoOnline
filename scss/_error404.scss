@@ -1,0 +1,138 @@
+.fondo__img--bg{
+    background-image: linear-gradient(to top, $degradadoheadererror404), url("/images/generales/404errorFondo.jpg");
+    @include background;
+}
+
+.contenedor404Error {
+    margin-inline: auto;
+    margin-top: 4.5rem;
+}
+
+.texto404 {
+    color: $colorcamel;
+
+    .far {
+        color: $colorcamel;
+        margin: 20px;
+        font-size: 180px;
+    }
+
+    h1 {
+        font-size: 200px;
+    }
+}
+
+.parrafo404 {
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+}
+
+
+/* ======================= RESPONSIVE ======================= */
+
+/* ======================== 510px ======================== */
+
+@media only screen and (max-width: 510px) {
+
+    .texto404 {    
+        .far {
+            margin: 20px;
+            font-size: 70px;
+        }
+    
+        h1 {
+            font-size: 80px;
+        }
+    }
+
+    .parrafo404 {
+        margin-inline: 25px;
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            margin-top: 1rem;
+        }
+    }
+
+    .fondo__img--bg{
+        padding-bottom: 8rem;
+        height: auto;
+    }
+
+    .contenedor404Error{
+        margin-top: 5rem;
+    }
+
+}
+
+/* ======================== 630px || 511px ======================== */
+  
+  
+@media only screen and (max-width: 630px) and (min-width: 511px){
+
+    .texto404 {
+    
+        .far {
+            margin: 20px;
+            font-size: 140px;
+        }
+    
+        h1 {
+            font-size: 180px;
+        }
+    }
+
+    .fondo__img--bg{
+        padding-bottom: 8rem;
+        height: auto;
+    }
+
+    .contenedor404Error{
+        margin-top: 80px;
+    }
+
+}
+
+/* ======================== 830px || 631px ======================== */
+  
+@media only screen and (max-width: 830px) and (min-width: 631px){
+
+    .texto404 {    
+        .far {
+            margin: 20px;
+            font-size: 140px;
+        }
+    
+        h1 {
+            font-size: 180px;
+        }
+    }
+
+    .fondo__img--bg{
+        padding-bottom: 8rem;
+        height: auto;
+    }
+
+    .contenedor404Error{
+        margin-top: 5rem;
+        margin-inline: 2rem;
+    }
+}
+
+/* ======================== 990px || 831px ======================== */
+
+@media only screen and (max-width: 990px) and (min-width: 831px){
+    
+    .fondo__img--bg{
+        padding-bottom: 8rem;
+        height: auto;
+    }
+
+    .contenedor404Error{
+        margin-top: 5rem;
+    }
+
+}
