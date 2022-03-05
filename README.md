@@ -16,7 +16,7 @@ Se trata de un sitio web con un apartado donde se encuentra incorporado un catá
 * [Linkedin](https://www.linkedin.com/in/allisonrosales/)
 * [Email](mailto:allisonrosales.dev@gmail.com)
 
-## Autora 🙍🏽‍♀️
+## Autora 👩🏽‍💻
 
 Hecho con 💖 por [Allison Rosales](https://github.com/allisonrosales)
 
