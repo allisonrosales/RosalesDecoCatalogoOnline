@@ -20,6 +20,6 @@ Se trata de un sitio web con un apartado donde se encuentra incorporado un catá
 
 Hecho con 💖 por [Allison Rosales](https://github.com/allisonrosales)
 
-### Live server website 💻
+## Live server website 💻
 
 http://rosalesdeco-catalogoonline.vercel.app/
